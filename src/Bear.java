@@ -8,8 +8,6 @@ public class Bear extends Animal {
         this.furLenth = furLenth;
     }
 
-    // ta metoda musi byc zaimplementowana, bo jest
-    // jako abstract w Aminal
     @Override
     public void introduce() {
         System.out.println("I'm a bear. My name is "

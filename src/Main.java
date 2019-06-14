@@ -19,37 +19,16 @@ public class Main {
         animals.add(wolf);
         animals.add(dog);
 
-        // sposob 2 dodawania do listy, ALE ta lista niest juz niezmienialna, okreslamy ilosc elementow i pozniej
-        // nie moge jej juz rozszerzyc
-//        List<Animal> aminals2 = Arrays.asList(
-//                new Bear("Yogi", 200, 40),
-//                new Bear("Yogi", 200, 40)
-//        );
-//
-//
-//        // sposob 3
-//        animals.add(new Bear("old bear", 200, 40));
-//
-
-        //ITERACJA PO LISTACH
-
-        //sposob 1
-        /*for (int i = 0; i < animals.size(); i++) {
-
-            System.out.println(animals.get(i));
-        }
-*/
-        //sposob 2
 
         for (Animal animal : animals) {
-            System.out.print(animal.getId() + " : ");             //print nie dodaje nowej lini, println dodaje nowa linie
+            System.out.print(animal.getId() + " : ");
             animal.introduce();
         }
 
         //LAMBDA, programowanie funkcyjne
 
 //        animals.forEach(a-> System.out.println(a));
-//        animals.forEach(System.out::println);           //animal jest niewidoczny, ale on tam jest :)'
+//        animals.forEach(System.out::println);
 
         //todo - na jutro
 
