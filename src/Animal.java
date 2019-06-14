@@ -4,19 +4,15 @@ public abstract class Animal {
     private int id;
     protected String name;
     protected  float weight;
-    private static int COUNTER=0;       // zmienne statyczne piszemy z duzych liter
-
+    private static int COUNTER=0;
 
     public Animal(String name, float weight) {
-        this.id = ++COUNTER;            //najpierw inkrementuje, potem wyswietlam, dlatego ++ na poczatku
+        this.id = ++COUNTER;
         this.name = name;
         this.weight = weight;
     }
 
-    //jesli metoda jest abstarkcyjna, to musi byc zaimplementowana pozniej
-    //ale tu nie moge dodac ciala metody (gdyby bylo bez 'abstract' mozna by bylo dodac cialo)
     public abstract void introduce();
-
 
     //gettery & settery
     public String getName() {
