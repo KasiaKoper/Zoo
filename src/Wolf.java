@@ -1,5 +1,3 @@
-package ZOO;
-
 public class Wolf extends Animal implements Cannie {
 
 

@@ -1,4 +1,3 @@
-package ZOO;
 
 public class Bear extends Animal {
 
